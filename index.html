@@ -3,81 +3,432 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI+Design Studio Command Center</title>
+  <title>Developing Deepest Dungeon with AI as Player Two</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<!--
-  THIS IS YOUR DASHBOARD. GitHub Pages serves this file.
-  Replace the placeholder text below with the real content from your
-  AI+Design Studio Command Center (Canvas: Project 2, Step 2).
-  KEEP OR TRIM: delete any <section> you did not build - all seven or a
-  subset is fine. Beginnings-level content is fine; this is the on-ramp,
-  not Project 5. Make it yours; do not leave it looking like a template.
--->
 <body>
-  <header class="site-header">
-    <p class="eyebrow">AI + Design Studio &#183; Command Center</p>
-    <h1 id="project-title">Your Project Title</h1>
-    <p class="tagline">One-line summary of what you are investigating &#8212; and your name.</p>
-  </header>
+  <div class="dashboard-shell">
+    <aside class="side-menu" aria-label="Dashboard navigation">
+      <div class="menu-brand">
+        <span class="brand-kicker">AI + Design Studio</span>
+        <strong>Dungeon Control</strong>
+      </div>
 
-  <main class="container">
+      <nav class="menu-nav">
+        <button class="nav-button is-active" type="button" data-section="identity">Identity</button>
+        <button class="nav-button" type="button" data-section="inquiry">Inquiry</button>
+        <button class="nav-button" type="button" data-section="sources">Sources</button>
+        <button class="nav-button" type="button" data-section="roadmap">Roadmap</button>
+        <button class="nav-button" type="button" data-section="prompts">Prompts</button>
+        <button class="nav-button" type="button" data-section="experiments">Experiments</button>
+        <button class="nav-button" type="button" data-section="workspace">Workspace</button>
+      </nav>
 
-    <!-- Project Identity Card -->
-    <section aria-labelledby="identity-h">
-      <h2 id="identity-h">Project Identity Card</h2>
-      <p>Title, curiosity statement, short summary, audience / context, and possible final direction(s).</p>
-    </section>
+      <div class="menu-status">
+        <span>Status</span>
+        <strong>Playable systems in progress</strong>
+      </div>
+    </aside>
 
-    <!-- Inquiry Brief -->
-    <section aria-labelledby="inquiry-h">
-      <h2 id="inquiry-h">Inquiry Brief</h2>
-      <p>Your research question, why it matters, what you need to learn, and 2&#8211;3 possible final outcomes.</p>
-    </section>
+    <main class="command-screen">
+      <header class="hero-panel">
+        <div>
+          <p class="eyebrow">Research Dashboard / Game-Dev Journal</p>
+          <h1>Developing Deepest Dungeon with AI as Player Two</h1>
+          <p class="hero-copy">
+            A project-management dashboard tracking how AI can help a beginner build a 2D roguelike bullet-hell game without taking over the creator's voice.
+          </p>
+        </div>
+        <div class="research-card" aria-label="Main research question">
+          <span>Research Question</span>
+          <strong>How can AI help beginners develop playable games while still preserving their creative voice?</strong>
+        </div>
+      </header>
 
-    <!-- Source Starter List -->
-    <section aria-labelledby="sources-h">
-      <h2 id="sources-h">Source Starter List</h2>
-      <ul>
-        <li>Source 1 &#8212; title, creator, link, type, why it matters</li>
-        <li>Source 2 &#8212; title, creator, link, type, why it matters</li>
-        <li>Source 3 &#8212; optional</li>
-      </ul>
-    </section>
+      <section class="panel is-active" id="identity" aria-labelledby="identity-title">
+        <div class="section-heading">
+          <p class="eyebrow">Project Identity Card</p>
+          <h2 id="identity-title">Current Build Profile</h2>
+        </div>
 
-    <!-- Project Brief / Weekly Roadmap -->
-    <section aria-labelledby="roadmap-h">
-      <h2 id="roadmap-h">Project Brief / Weekly Roadmap</h2>
-      <p>Weeks 5&#8211;11: goal, activities, tools, output, and success indicator for each week.</p>
-    </section>
+        <div class="identity-grid">
+          <article class="stat-panel">
+            <span>Game Concept</span>
+            <strong>Deepest Dungeon</strong>
+            <p>A 2D pixel, top-down, dungeon-descent roguelike bullet-hell game.</p>
+          </article>
+          <article class="stat-panel">
+            <span>Player Goal</span>
+            <strong>Go deeper</strong>
+            <p>Clear enemy rooms, find the way down, descend, and survive as long as possible.</p>
+          </article>
+          <article class="stat-panel">
+            <span>AI Role</span>
+            <strong>Technical partner</strong>
+            <p>AI helps with planning, event logic, prototyping, and troubleshooting while the creative direction stays mine.</p>
+          </article>
+        </div>
 
-    <!-- Prompt Log -->
-    <section aria-labelledby="prompts-h">
-      <h2 id="prompts-h">Prompt Log</h2>
-      <p>Each entry: the prompt used, model / tool, output summary, and what changed afterward.</p>
-    </section>
+        <div class="two-column">
+          <div>
+            <h3>Short Summary</h3>
+            <p>
+              This project explores whether AI can help beginners start developing playable games without advanced coding skills. The focus is accessibility, creative ownership, and the tension between assistance and authorship.
+            </p>
+          </div>
+          <div>
+            <h3>Audience and Context</h3>
+            <p>
+              The audience is beginner game creators, design students, artists, and storytellers who have game ideas but feel blocked by coding or technical barriers.
+            </p>
+          </div>
+        </div>
 
-    <!-- Experiment Log -->
-    <section aria-labelledby="experiments-h">
-      <h2 id="experiments-h">Experiment Log</h2>
-      <p>Each experiment: what you tried, notes, what worked, what failed, and the next step.</p>
-    </section>
+        <div class="direction-list" aria-label="Possible final directions">
+          <article>
+            <h3>Playable Prototype</h3>
+            <p>A small dungeon-crawler prototype made with AI support.</p>
+          </article>
+          <article>
+            <h3>Process Journal</h3>
+            <p>A record of where AI helped, where it failed, and where I revised or rejected its ideas.</p>
+          </article>
+          <article>
+            <h3>Beginner Toolkit</h3>
+            <p>A workflow showing how non-coders can use AI while keeping creative control.</p>
+          </article>
+        </div>
+      </section>
 
-    <!-- Links / Workspace Board -->
-    <section aria-labelledby="links-h">
-      <h2 id="links-h">Links / Workspace Board</h2>
-      <ul>
-        <li>Milanote / Notion / Figma board</li>
-        <li>AI tools used</li>
-        <li>Repo / site link</li>
-        <li>Working files (Figma, code, assets)</li>
-      </ul>
-    </section>
+      <section class="panel" id="inquiry" aria-labelledby="inquiry-title">
+        <div class="section-heading">
+          <p class="eyebrow">Inquiry Brief</p>
+          <h2 id="inquiry-title">What The Research Is Testing</h2>
+        </div>
 
-  </main>
+        <div class="brief-layout">
+          <article>
+            <h3>Why It Matters</h3>
+            <p>
+              Game development can feel unapproachable to people who have strong ideas for mechanics, storytelling, or world-building but lack coding skills. AI tools may close that gap by assisting with planning, coding, prototyping, art, and problem-solving.
+            </p>
+          </article>
+          <article>
+            <h3>What I Need To Learn</h3>
+            <p>
+              I need to learn how beginner-friendly AI game-development tools actually are, where AI is most useful in the process, and how to recognize when AI supports creative direction instead of replacing it.
+            </p>
+          </article>
+          <article>
+            <h3>Possible Outcomes</h3>
+            <ul class="signal-list">
+              <li>AI helps a beginner develop a playable prototype with minimal complications.</li>
+              <li>AI complicates the process or drifts away from the creator's vision.</li>
+              <li>The most useful role for AI is as a technical support system, not a creative replacement.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-  <footer class="site-footer">
-    <p>DESN 374 &#183; Command Center &#183; built with the Interview &#8594; Brainstorm &#8594; Plan &#8594; Code &#8594; Commit workflow</p>
-  </footer>
+      <section class="panel" id="sources" aria-labelledby="sources-title">
+        <div class="section-heading">
+          <p class="eyebrow">Source Starter List</p>
+          <h2 id="sources-title">Research Inventory</h2>
+        </div>
+
+        <div class="source-grid">
+          <article class="source-item">
+            <span>Official Documentation</span>
+            <h3>GDevelop Documentation</h3>
+            <p>Explains GDevelop's no-code event system, tutorials, beginner-friendly workflow, and game-building features.</p>
+            <a href="https://wiki.gdevelop.io/gdevelop5/" rel="noreferrer">Open source</a>
+          </article>
+          <article class="source-item">
+            <span>Tool Research</span>
+            <h3>GDevelop AI Game Development</h3>
+            <p>Describes GDevelop's AI chat and agent features for creating logic, scenes, mechanics, and step-by-step guidance.</p>
+            <a href="https://gdevelop.io/blog/gdevelop-ai-build-games-faster-ai-powered-tools" rel="noreferrer">Open source</a>
+          </article>
+          <article class="source-item">
+            <span>Industry Report</span>
+            <h3>GDC: What Game Developers Want From Generative AI</h3>
+            <p>Shows mixed industry feelings around generative AI, including workflow support, ethics, IP concerns, and creative control.</p>
+            <a href="https://gdconf.com/state-game-industry/" rel="noreferrer">Open source</a>
+          </article>
+          <article class="source-item">
+            <span>Research Paper</span>
+            <h3>Envisioning and Designing Generative AI to Support Indie Game Development</h3>
+            <p>Connects directly to the project audience by looking at indie developers and AI as a support tool.</p>
+            <a href="https://arxiv.org/" rel="noreferrer">Search source</a>
+          </article>
+          <article class="source-item">
+            <span>Research Paper</span>
+            <h3>Scratch Copilot: Supporting Youth Creative Coding with AI</h3>
+            <p>Useful for thinking about how AI can make creative coding more accessible to beginners.</p>
+            <a href="https://arxiv.org/html/2505.03867v1" rel="noreferrer">Open source</a>
+          </article>
+          <article class="source-item">
+            <span>Research Paper</span>
+            <h3>DreamGarden: A Designer Assistant for Growing Games from a Single Prompt</h3>
+            <p>Helps frame the boundary between AI-generated assistance and designer-owned direction.</p>
+            <a href="https://arxiv.org/html/2410.01791v1" rel="noreferrer">Open source</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-heading">
+          <p class="eyebrow">Project Brief / Weekly Roadmap</p>
+          <h2 id="roadmap-title">Weeks 5-11 Dungeon Timeline</h2>
+        </div>
+
+        <div class="timeline-tabs" role="tablist" aria-label="Weekly roadmap">
+          <button class="week-button is-active" type="button" data-week="5">Week 5</button>
+          <button class="week-button" type="button" data-week="6">Week 6</button>
+          <button class="week-button" type="button" data-week="7">Week 7</button>
+          <button class="week-button" type="button" data-week="8">Week 8</button>
+          <button class="week-button" type="button" data-week="9">Week 9</button>
+          <button class="week-button" type="button" data-week="10">Week 10</button>
+          <button class="week-button" type="button" data-week="11">Week 11</button>
+        </div>
+
+        <div class="week-panels">
+          <article class="week-panel is-active" data-week-panel="5">
+            <span class="floor-label">Depth 05</span>
+            <h3>Define The Foundation</h3>
+            <p><strong>Goal:</strong> Define the project focus and organize the research foundation.</p>
+            <p><strong>Activities:</strong> Finalize identity, inquiry brief, source starter list, and command-center sections.</p>
+            <p><strong>Output:</strong> A cleaned-up Command Center with project identity, inquiry brief, and starter sources.</p>
+            <p><strong>Success indicator:</strong> Someone can understand what I am investigating and why it matters.</p>
+          </article>
+          <article class="week-panel" data-week-panel="6">
+            <span class="floor-label">Depth 06</span>
+            <h3>Research Tools And First Experiments</h3>
+            <p><strong>Goal:</strong> Research how AI is currently being used in game development.</p>
+            <p><strong>Activities:</strong> Read GDevelop sources, try tutorials, test beginner workflows, and document the first completed mini-game.</p>
+            <p><strong>Output:</strong> Research notes, screenshots, and an early playable test.</p>
+            <p><strong>Success indicator:</strong> I can explain at least three ways AI helps game development and at least three concerns about it.</p>
+          </article>
+          <article class="week-panel" data-week-panel="7">
+            <span class="floor-label">Depth 07</span>
+            <h3>Begin The Main Game</h3>
+            <p><strong>Goal:</strong> Test beginner-friendly AI game-development tools by starting Deepest Dungeon.</p>
+            <p><strong>Activities:</strong> Plan the game, create sprites, set up WASD movement, mouse aiming, projectile physics, collision, and enemy health.</p>
+            <p><strong>Output:</strong> A first set of AI-assisted workflow experiments with prompts, screenshots, and notes.</p>
+            <p><strong>Success indicator:</strong> I can identify what AI realistically helped me build.</p>
+          </article>
+          <article class="week-panel" data-week-panel="8">
+            <span class="floor-label">Depth 08</span>
+            <h3>Lock The Prototype Scope</h3>
+            <p><strong>Goal:</strong> Choose the game concept and define the playable prototype scope.</p>
+            <p><strong>Activities:</strong> Review experiment results, decide what kind of small game is realistic, and create a simple outline.</p>
+            <p><strong>Output:</strong> A one-page mini game design document and a clear prototype plan.</p>
+            <p><strong>Success indicator:</strong> The game idea is small enough to build, but connected to the research question.</p>
+          </article>
+          <article class="week-panel" data-week-panel="9">
+            <span class="floor-label">Depth 09</span>
+            <h3>Build The First Playable Prototype</h3>
+            <p><strong>Goal:</strong> Build the first playable prototype.</p>
+            <p><strong>Activities:</strong> Start the basic game version, use AI for help with coding, logic, debugging, placeholder writing, or planning.</p>
+            <p><strong>Output:</strong> A rough playable prototype and an AI process log.</p>
+            <p><strong>Success indicator:</strong> The prototype can be played, even if it is unfinished or visually simple.</p>
+          </article>
+          <article class="week-panel" data-week-panel="10">
+            <span class="floor-label">Depth 10</span>
+            <h3>Playtest And Revise</h3>
+            <p><strong>Goal:</strong> Playtest, revise, and evaluate creative ownership.</p>
+            <p><strong>Activities:</strong> Ask classmates or friends to test, collect feedback, revise the prototype, and reflect on AI's role.</p>
+            <p><strong>Output:</strong> Revised prototype, feedback notes, and a reflection on AI's role.</p>
+            <p><strong>Success indicator:</strong> I can point to specific examples where my creative decisions shaped the game more than the AI did.</p>
+          </article>
+          <article class="week-panel" data-week-panel="11">
+            <span class="floor-label">Depth 11</span>
+            <h3>Final Presentation And Documentation</h3>
+            <p><strong>Goal:</strong> Prepare the final presentation and process documentation.</p>
+            <p><strong>Activities:</strong> Finalize the documented experiment, organize screenshots/prompts/research notes, and explain what I learned.</p>
+            <p><strong>Output:</strong> Final Command Center, playable prototype or documentation, and final reflection.</p>
+            <p><strong>Success indicator:</strong> Someone can understand what I researched, what I tested, what I made, and what I learned about keeping creative control.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="prompts" aria-labelledby="prompts-title">
+        <div class="section-heading">
+          <p class="eyebrow">Prompt Log</p>
+          <h2 id="prompts-title">AI Requests That Shaped The Build</h2>
+        </div>
+
+        <div class="accordion-list">
+          <details open>
+            <summary>Creative planning interview with ChatGPT</summary>
+            <div class="log-body">
+              <p><strong>Prompt used:</strong> I asked ChatGPT to interview me one question at a time about my game loop, mechanics, story, and priorities while keeping the creative vision mine.</p>
+              <p><strong>Model / tool:</strong> ChatGPT</p>
+              <p><strong>Output summary:</strong> It organized my answers into a top-down roguelike dungeon crawler plan with WASD movement, mouse aiming, projectile combat, room clearing, enemies, upgrades, and floor descent.</p>
+              <p><strong>What changed afterward:</strong> I used the plan to decide what to build first in GDevelop.</p>
+            </div>
+          </details>
+          <details>
+            <summary>GDevelop AI support for building logic</summary>
+            <div class="log-body">
+              <p><strong>Prompt used:</strong> Requests focused on technical help inside GDevelop, such as setting up movement, projectile behavior, collisions, and enemy health.</p>
+              <p><strong>Model / tool:</strong> GDevelop AI chat and agent</p>
+              <p><strong>Output summary:</strong> AI helped guide event logic and locate the right actions inside the no-code system.</p>
+              <p><strong>What changed afterward:</strong> I was able to move from tutorials into my own game prototype.</p>
+            </div>
+          </details>
+          <details>
+            <summary>NotebookLM source processing</summary>
+            <div class="log-body">
+              <p><strong>Prompt used:</strong> Summarize source material and help me understand GDevelop, AI tools, and beginner-friendly game development.</p>
+              <p><strong>Model / tool:</strong> NotebookLM</p>
+              <p><strong>Output summary:</strong> It created study artifacts such as summaries, quizzes, and a short overview video.</p>
+              <p><strong>What changed afterward:</strong> I checked the source outputs and used the verified findings to support my research direction.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="panel" id="experiments" aria-labelledby="experiments-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experiment Log</p>
+          <h2 id="experiments-title">Build Evidence And Results</h2>
+        </div>
+
+        <div class="experiment-grid">
+          <details open>
+            <summary>Experiment 1: Learn GDevelop basics</summary>
+            <div class="log-body">
+              <p><strong>What I tried:</strong> Read the Getting Started page, downloaded GDevelop, and completed the free tutorials.</p>
+              <p><strong>What worked:</strong> The tutorial flow made it possible to build a first simple game without traditional coding.</p>
+              <p><strong>Next step:</strong> Move from tutorial systems into my own dungeon prototype.</p>
+              <a class="thumbnail-link" href="https://app.milanote.com/media/p/images/1Wl5241mprt84G/75j/image.png?w=800" rel="noreferrer">
+                <img src="https://app.milanote.com/media/p/images/1Wl5241mprt84G/75j/image.png?w=800" alt="GDevelop tutorial screen from the command center" />
+              </a>
+              <a class="media-link" href="https://app.milanote.com/media/p/images/1Wl5241mprt84G/75j/image.png?w=800" rel="noreferrer">View GDevelop tutorial screenshot</a>
+            </div>
+          </details>
+          <details>
+            <summary>Experiment 2: First completed mini-game</summary>
+            <div class="log-body">
+              <p><strong>What I tried:</strong> Created a background, character, walls, collectible, score system, win condition, and win screen.</p>
+              <p><strong>What worked:</strong> I completed my first ever game and proved that the tool could support beginner progress.</p>
+              <p><strong>Next step:</strong> Use the experience to begin the main deliverable.</p>
+              <a class="thumbnail-link" href="https://app.milanote.com/media/p/images/1Wl8f81mprt85M/hPe/image.png" rel="noreferrer">
+                <img src="https://app.milanote.com/media/p/images/1Wl8f81mprt85M/hPe/image.png" alt="GDevelop win condition setup screenshot" />
+              </a>
+              <a class="media-link" href="https://media.milanote.com/p/files/1Wl8eo1mprt85K/SHO/20260507-2333-46.3155710.mp4" rel="noreferrer">Open win-condition media</a>
+            </div>
+          </details>
+          <details>
+            <summary>Experiment 3: AI-assisted game planning</summary>
+            <div class="log-body">
+              <p><strong>What I tried:</strong> Asked ChatGPT to help organize the creative process and prioritize what to build first.</p>
+              <p><strong>What worked:</strong> It helped turn a large game idea into a practical build order.</p>
+              <p><strong>What I kept mine:</strong> The game concept, tone, creative direction, and design choices.</p>
+              <a class="thumbnail-link" href="assets/experiment-3-ai-game-plan.png">
+                <img src="assets/experiment-3-ai-game-plan.png" alt="AI-assisted game planning priority board screenshot" />
+              </a>
+              <a class="media-link" href="assets/experiment-3-ai-game-plan.png">View game-plan screenshot</a>
+            </div>
+          </details>
+          <details>
+            <summary>Experiment 4: Movement, aiming, and projectiles</summary>
+            <div class="log-body">
+              <p><strong>What I tried:</strong> Built WASD movement, mouse aim, and projectile physics in GDevelop.</p>
+              <p><strong>What worked:</strong> The prototype started to feel like the core of a top-down dungeon shooter.</p>
+              <p><strong>Next step:</strong> Add enemy reactions and damage systems.</p>
+              <a class="thumbnail-link" href="https://app.milanote.com/media/p/images/1Wo4V81goOny32/Y6C/image.png" rel="noreferrer">
+                <img src="https://app.milanote.com/media/p/images/1Wo4V81goOny32/Y6C/image.png" alt="Mouse aiming setup screenshot in GDevelop" />
+              </a>
+              <a class="media-link" href="https://media.milanote.com/p/files/1Wo5bz1goOny3s/2uD/20260516-0255-03.2917310.mp4" rel="noreferrer">Open projectile physics media</a>
+            </div>
+          </details>
+          <details>
+            <summary>Experiment 5: Bullet collision and enemy health</summary>
+            <div class="log-body">
+              <p><strong>What I tried:</strong> Added bullet collision and enemy health so attacks could affect enemies.</p>
+              <p><strong>What worked:</strong> The game moved closer to the first combat prototype from the roadmap.</p>
+              <p><strong>Research note:</strong> This is where AI support is most useful: technical implementation, debugging, and event logic.</p>
+              <a class="thumbnail-link" href="https://app.milanote.com/media/p/images/1Wo5my1goOny3v/aDe/image.png" rel="noreferrer">
+                <img src="https://app.milanote.com/media/p/images/1Wo5my1goOny3v/aDe/image.png" alt="Enemy health setup screenshot in GDevelop" />
+              </a>
+              <a class="media-link" href="https://media.milanote.com/p/files/1Wok2X1Krxca3M/e9o/20260516-1847-06.9085444.mp4" rel="noreferrer">Open enemy-health media</a>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="panel" id="workspace" aria-labelledby="workspace-title">
+        <div class="section-heading">
+          <p class="eyebrow">Links / Workspace Board</p>
+          <h2 id="workspace-title">Command Center Resources</h2>
+        </div>
+
+        <div class="workspace-layout">
+          <article>
+            <h3>Tools Used</h3>
+            <ul class="signal-list">
+              <li>GDevelop for game building and event logic.</li>
+              <li>GDevelop AI chat and agent for technical help.</li>
+              <li>ChatGPT for planning, prioritizing, and reflection.</li>
+              <li>NotebookLM for source summaries and study artifacts.</li>
+              <li>Milanote for the original command-center board.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Working Files</h3>
+            <ul class="signal-list">
+              <li>Command Center export markdown.</li>
+              <li>GDevelop project files and gameplay captures.</li>
+              <li>Research notes, source artifacts, and weekly progress reports.</li>
+              <li>GitHub Pages dashboard scaffold.</li>
+            </ul>
+          </article>
+          <article class="evidence-board">
+            <h3>Evidence Board</h3>
+            <a href="https://app.milanote.com/media/p/images/1Wo3RC1goOny2a/GQx/image.png?w=800" rel="noreferrer">GDevelop AI involvement screenshot</a>
+            <a href="https://app.milanote.com/media/p/images/1Wo4H71goOny2K/rYj/image.png?w=800" rel="noreferrer">Player movement screenshot</a>
+            <a href="https://app.milanote.com/media/p/images/1Wo5my1goOny3v/aDe/image.png" rel="noreferrer">Enemy health screenshot</a>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Built through the Interview -> Brainstorm -> Plan -> Code -> Commit workflow.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    const navButtons = document.querySelectorAll(".nav-button");
+    const sections = document.querySelectorAll(".panel");
+
+    navButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = button.dataset.section;
+
+        navButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+        sections.forEach((section) => section.classList.toggle("is-active", section.id === target));
+
+        const activeSection = document.getElementById(target);
+        if (activeSection) {
+          activeSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    });
+
+    const weekButtons = document.querySelectorAll(".week-button");
+    const weekPanels = document.querySelectorAll(".week-panel");
+
+    weekButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const week = button.dataset.week;
+
+        weekButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+        weekPanels.forEach((panel) => panel.classList.toggle("is-active", panel.dataset.weekPanel === week));
+      });
+    });
+  </script>
 </body>
 </html>
