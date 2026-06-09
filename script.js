@@ -31,6 +31,27 @@ document.querySelectorAll("[data-view-link]").forEach((link) => {
   });
 });
 
+function playShowcaseVideos() {
+  document.querySelectorAll("[data-showcase-video]").forEach((video) => {
+    video.muted = true;
+    video.loop = true;
+
+    const playVideo = () => {
+      video.play().catch(() => {
+        video.controls = true;
+      });
+    };
+
+    if (video.readyState >= 2) {
+      playVideo();
+    } else {
+      video.addEventListener("canplay", playVideo, { once: true });
+    }
+  });
+}
+
+playShowcaseVideos();
+
 const finalProductScreenshots = [
   {
     src: "images/130-image-Screenshot-2026-06-08-184845.png",

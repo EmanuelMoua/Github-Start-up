@@ -42,9 +42,25 @@
             <button class="button" type="button" data-view="process">View Process</button>
           </div>
         </div>
-        <figure class="hero-media">
-          <img src="images/080-image-image.png" alt="Deepest Dungeon room prototype with pixel walls, enemies, and player character." />
-          <figcaption>Room logic evidence from the playable dungeon loop.</figcaption>
+        <figure class="hero-media hero-showcase" aria-label="Looping showcase of Deepest Dungeon prototype videos">
+          <div class="showcase-main">
+            <video data-showcase-video autoplay muted loop playsinline preload="metadata" poster="images/080-image-image.png">
+              <source src="images/126-video-20260527-0226-23.4023862.mp4" type="video/mp4" />
+            </video>
+            <div class="showcase-strip">
+              <div>
+                <video data-showcase-video autoplay muted loop playsinline preload="metadata" poster="images/013-image-image.png">
+                  <source src="images/127-video-20260528-2317-26.1875862.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div>
+                <video data-showcase-video autoplay muted loop playsinline preload="metadata" poster="images/065-image-image.png">
+                  <source src="images/127-video-20260528-2317-26.1875862.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+          <figcaption>Looping evidence from the playable dungeon build: movement, projectiles, and enemy systems.</figcaption>
         </figure>
       </div>
 
@@ -123,6 +139,23 @@
         <p>
           The research looked at how AI is used in game development, where it helps beginners, and where it risks replacing creative authorship. NotebookLM helped process sources, but the project notes emphasize checking claims against the original materials.
         </p>
+        <div class="research-metrics" aria-label="Research summary">
+          <article>
+            <span>Source Base</span>
+            <strong>3 anchor sources</strong>
+            <p>Industry report, indie-developer research, and GDevelop documentation.</p>
+          </article>
+          <article>
+            <span>Verification</span>
+            <strong>Checked notes</strong>
+            <p>Summaries and screenshots were compared against the source material.</p>
+          </article>
+          <article>
+            <span>Design Rule</span>
+            <strong>AI supports, I decide</strong>
+            <p>Research became a boundary for authorship during the build.</p>
+          </article>
+        </div>
       </div>
 
       <div class="research-grid">
@@ -176,7 +209,7 @@
           <article>
             <img src="images/GDevelopDocumentationSummary.png" alt="NotebookLM summary of the GDevelop documentation describing the tool, event system, tutorials, and AI assistant." />
             <h3>Verified tool claims</h3>
-            <p>I checked NotebookLM’s GDevelop summary against the source text before using it to justify GDevelop as the build tool.</p>
+            <p>I checked NotebookLM's GDevelop summary against the source text before using it to justify GDevelop as the build tool.</p>
           </article>
           <article>
             <img src="images/GDevelopVisualNotes.png" alt="Handwritten visual notes summarizing GDevelop documentation, no-code event logic, tutorials, and AI assistant features." />
@@ -227,11 +260,11 @@
         <div class="evidence-list">
           <article>
             <h3>Beginner learning phase</h3>
-            <p>I started by reading GDevelop's Getting Started materials, downloading the app, completing tutorials, and making a first simple coin-collecting game. This gave me enough tool familiarity to begin the actual prototype.</p>
+            <p>I started by reading GDevelop's Getting Started materials, downloading the app, completing tutorials, and making my first simple gameplay loop; a coin-collecting game. This gave me enough tool familiarity to begin the actual prototype.</p>
           </article>
           <article>
             <h3>AI-assisted planning phase</h3>
-            <p>ChatGPT helped organize my game idea into technical priorities: player combat, enemy systems, room clear logic, manual floor structure, floor transition, upgrades, and later randomization.</p>
+            <p>ChatGPT helped organize my game idea into sections that were ordered by build priority: player combat, enemy systems, room clear logic, manual floor structure, floor transition, upgrades, and later randomization.</p>
           </article>
           <article>
             <h3>Debugging and pivot phase</h3>
@@ -441,7 +474,7 @@
           Having finished making the first real playable iteration of my game, there is much to reflect upon. My goal was to find out if AI could help a beginner build a game from nothing, all while preserving the developer's creative vision. Having started with no game building experience, I decided to use myself as the test subject. During the last five weeks, I got familiar with GDevelop and worked on Deepest Dungeon, a roguelike dungeon-crawler where the main goal is to go as far down as possible.
         </p>
         <p>
-          In the beginning, I was skeptical. I was not sure whether AI was truly practical, but over time those doubts became more specific. I learned how indie developers and larger studios use AI to streamline tedious parts of game building, such as debugging and prototyping, while also recognizing concerns around ethics, legal risk, and creative freedom.
+          In the beginning, I was skeptical. I was not sure whether AI was truly practical, but over time those doubts began to fade away. I learned how indie developers and larger studios use AI to streamline tedious parts of game building, such as debugging and prototyping, while also recognizing concerns around ethics, legal risk, and creative freedom.
         </p>
         <h3>Where AI helped</h3>
         <p>
@@ -449,7 +482,7 @@
         </p>
         <h3>Where AI failed</h3>
         <p>
-          Once the game became more complicated, the AI started to fail more often. Bugs piled up, some suggested fixes did not match the real GDevelop options, and the agent sometimes missed small details that mattered. Those failures became important because they showed me that I was actually learning. I began guiding the AI, spotting issues myself, and building more complex event sequences without relying on it as much.
+          Once the game became more complicated, the AI started to fail more often. Bugs piled up, GDevelop was hallucinating solutions that did not match the options the game engine currently had, and the agent sometimes missed small details that mattered. Those failures became important because they showed me that I was actually learning. I began guiding the AI, spotting issues myself, and building more complex event sequences without relying on it as much.
         </p>
         <h3>What comes next</h3>
         <p>
